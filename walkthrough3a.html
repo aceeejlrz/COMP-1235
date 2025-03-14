@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jezrel Ace Dela Cruz - Task 1</title>
+    <style>
+        .wrapper{
+            display: grid;
+            /* repeat(var1, var2)
+            var1=number of columns
+            var2= amount of space in fraction
+            1 fr = 25% 
+            Total number of columns = 4 */
+            grid-template-columns: repeat(3, 1fr);
+            /* MINIMUM height of row : 100
+            MAXIMUM height of row : 110px */
+            grid-auto-rows: minmax(100px, 110px);
+        }
+        div{
+            border: 1px solid orange;
+        }
+        .item1{
+            grid-column: 1/4;
+            /* 
+            when we have to apply css on child class, no. of row will not be infinity
+            no. of row s = row count no. of elements
+            in the PARENT CLASS (wrapper)
+            n=5 
+            */
+        }
+        .item2{
+            grid-column-start: 1;
+            /* START LEFT DOWN TO RIGHT */
+            grid-row: 2/4;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="item1">One</div>
+        <div class="item2">
+            Two
+            <p>I have some more content in.</p>
+            <p>This makes me taller than 100 pixels.</p>
+        </div>
+        <div class="item3">Three</div>
+        <div class="item4">Four</div>
+        <div class="item5">Five</div>
+    </div>
+</body>
+</html>
