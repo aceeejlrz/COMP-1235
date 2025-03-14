@@ -1,2 +1,4 @@
 # COMP-1235
-Full Stack School Lab Codes
+Full Stack School in:
+Labs, Assignments
+
