@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jezel Ace Dela Cruz - Task 4</title>
+    <script>
+    // Write a java script which can test expression patterns: 
+    // test expression patterns: pattern.test(var)
+    // 1=> Pattern_literal: (‘/pop/’),
+    let pattern = new RegExp(/pop/);
+    let var1 = 'popmusic';
+    let ress1 = pattern.test(var1); 
+    // 2=> Pattern_phone: (‘/\(\d{3}\)\d{3}-\d{4}/’)
+    let pattern2 = new RegExp(/\(\d{3}\)\d{3}-\d{4}/);                      //pattern2 for phone
+    let var2 = '(123)456-7890';                                             //change the var2 to test the pattern2
+    let ress2 = pattern2.test(var2);                                                    //test the var2 against the pattern2
+    // 3=> Pattern_email: (‘/^[a-zA-Z\.]*@[a-zA-Z]+\.com$/’))
+    let pattern3 = new RegExp(/^[a-zA-Z\.]*@[a-zA-Z]+\.com$/);              //pattern3 for email
+    let var3 = 'W7E2d@example.com';                                         //change the var3 to test the pattern3
+    let ress3 = pattern3.test(var3);                                                    //test the var3 against the pattern3
+    // Upload the work under public_html/comp1235/labs/week4/
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

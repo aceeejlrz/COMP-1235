@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jezel Ace Dela Cruz - Task 3</title>
+    <script>
+        // Write a JavaScript script to create an Animal object, 
+        const animal = new Object();
+        // declare constant variable for tail_length. 
+        animal.tail_length = 20;
+        // Declare the properties for one of the animals
+        const dino = {
+            name: 'T-Rex',
+            cousins: ['Velociraptor', 'Spinosaurus', 'Triceratops'], // 0=> Velociraptor, 1=> Spinosaurus, 2=> Triceratops
+            food: [
+                {breakfast1: 'grass', lunch1: 'another grass', dinner1: 'triceratops'},     // 0=> breakfast1, 1=> lunch1, 2=> dinner1
+                {breakfast2: 'juicy grass', lunch2: 'vegetables grass', dinner2: 'error'},  // 1=> breakfast2, 2=> lunch2, 3=> dinner2
+                {breakfast3: 'cake', lunch3: 'coffee', dinner3: 'more cake'}                // 2=> breakfast3, 3=> lunch3, 4=> dinner3
+            ] 
+        }
+        document.write('Dino name: ' + dino.name + '<br>');
+        document.write('name of the first cousin: ' + dino.cousins[0] + '<br>');
+        document.write('what the dino eats: ' + dino.food[2].lunch3);
+
+        //  and display the few properties.
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
